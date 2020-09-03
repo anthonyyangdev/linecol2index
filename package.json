@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Maps a line and column number to the index position of a given string",
   "main": "./dist/index.js",
+  "keywords": [
+    "line number", "column number", "index", "editor", "editor text", "conversion"
+  ],
+  "repository": "https://github.com/ayang4114/linecol2index",
   "scripts": {
     "test": "mocha -r ts-node/register '*.test.ts'",
     "prepare": "tsc",

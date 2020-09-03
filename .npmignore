@@ -117,3 +117,9 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+index.test.ts
+.idea/
+index.ts
+tsconfig.json
+.gitignore
+.npmignore
