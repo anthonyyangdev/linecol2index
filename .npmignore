@@ -84,7 +84,6 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/
@@ -121,5 +120,3 @@ index.test.ts
 .idea/
 index.ts
 tsconfig.json
-.gitignore
-.npmignore
