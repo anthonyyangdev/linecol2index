@@ -15,7 +15,7 @@
   "scripts": {
     "test": "mocha -r ts-node/register '*.test.ts'",
     "prepare": "tsc",
-    "clean": "rm -r ./dist ./.nyc_output",
+    "clean": "rm -r ./dist ./.nyc_output"
   },
   "author": {
     "email": "ayang4114@gmail.com",
