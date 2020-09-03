@@ -13,11 +13,12 @@ $ npm install --save linecol2index
 ```js
 const {linecol2index} = require('linecol2index');
 
-const text = getTextFromEditor();
-const line = 0
-const col = 0
+const text = getTextFromFile('example.py'); // "print("Hello, World!")\nprint("Goodbye!")"
+const line = 2
+const col = 1
 
 const index = linecol2index(line, col, text);
+console.log(text[index]) // 'p'
 ```
 
 ## License
