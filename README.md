@@ -1,6 +1,6 @@
 # linecol2index [![NPM version](https://badge.fury.io/js/linecol2index.svg)](https://npmjs.org/package/linecol2index)
 
-> Converts a line and column number to the index position of a string
+> Maps a line and column number to the index position of a string
 
 ## Installation
 

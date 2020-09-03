@@ -1,5 +1,5 @@
 /**
- * Converts the given line number and col number to the corresponding index of the given string.
+ * Maps the given line number and col number to the corresponding index of the given string.
  *
  * Returns -1 if an index is not possible for the given string, such as the given column number
  * exceeds the actual number of columns in the string.
