@@ -1,12 +1,17 @@
 {
   "name": "linecol2index",
   "version": "1.0.0",
-  "description": "Converts a line and column number to the index position of a string",
+  "description": "Converts a line and column number to the index position of a given string",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "mocha -r ts-node/register '*.test.ts'"
+    "test": "mocha -r ts-node/register '*.test.ts'",
+    "prepare": "tsc",
+    "clean": "rm -r ./dist ./.nyc_output"
   },
-  "author": "",
+  "author": {
+    "email": "ayang4114@gmail.com",
+    "name": "Anthony Yang"
+  },
   "license": "ISC",
   "devDependencies": {
     "@types/chai": "^4.2.12",

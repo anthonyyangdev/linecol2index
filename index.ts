@@ -8,7 +8,7 @@
  * @param text
  * @param usesCRLF
  */
-const convert = (
+export const linecol2index = (
   line: number,
   col: number,
   text: string,
@@ -39,4 +39,3 @@ const convert = (
   }
 }
 
-export default convert
