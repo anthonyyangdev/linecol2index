@@ -1,0 +1,21 @@
+{
+  "name": "linecol2index",
+  "version": "1.0.0",
+  "description": "Converts a line and column number to the index position of a string",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register '*.test.ts'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^14.6.3",
+    "chai": "^4.2.0",
+    "mocha": "^8.1.3",
+    "node": "^14.8.0",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  }
+}
