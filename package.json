@@ -1,6 +1,6 @@
 {
   "name": "linecol2index",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Maps a line and column number to the index position of a given string",
   "main": "./dist/index.js",
   "keywords": [
