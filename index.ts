@@ -8,7 +8,35 @@
  * @param text
  * @param usesCRLF
  */
-export const convert = (line: number, col: number, text: string, usesCRLF: boolean = false): number => {
+const convert = (
+  line: number,
+  col: number,
+  text: string,
+  usesCRLF: boolean = false
+): number => {
+  if (line <= 0 || col <= 0) {
+    return -1
+  }
+  let lines: string[]
+  if (usesCRLF) {
+    lines = text.split(/\r\n|\n/, line)
+  } else {
+    lines = text.split(/\n/, line)
+  }
+  if (line > lines.length) return -1
 
-  return 0;
+  let index = 0
+  for (let i = 0; i < line - 1; i++) {
+    const currentLine = lines[i]
+    index += currentLine.length
+    index += text[index] === '\r' ? 2 : 1
+  }
+  const lineOfInterest = lines[line - 1]
+  if (col - 1 <= lineOfInterest.length) {
+    return index + col - 1
+  } else {
+    return -1;
+  }
 }
+
+export default convert

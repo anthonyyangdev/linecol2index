@@ -1,6 +1,6 @@
 import {describe, it} from 'mocha'
 import {expect} from 'chai'
-import {convert} from "./index";
+import convert from "./index";
 
 describe('Tests', function () {
 
@@ -38,6 +38,16 @@ describe('Tests', function () {
     const line = 6
     const col = 1
     expect(text[convert(line, col, text, true)]).equals('p')
+    expect(text[convert(8, 3, text, true)]).equals('m')
+  });
+
+  it('should return -1 if the line and or col are invalid', function () {
+    const text = 'hello'
+    expect(convert(0, 1, text)).equals(-1)
+    expect(convert(2, 1, text)).equals(-1)
+    expect(convert(1, 11, text)).equals(-1)
+    expect(convert(0, 0, text)).equals(-1)
+    expect(convert(5, 5, text)).equals(-1)
   });
 
 });
